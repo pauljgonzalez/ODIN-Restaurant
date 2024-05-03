@@ -1,4 +1,5 @@
 import { homeButton } from "./home";
+import sushi from "./images/sushi.jpg"
 
 export function createDivIdName(idName,className,text){
     let div = document.createElement("div");
@@ -24,19 +25,20 @@ export function createImage(img,minwidth){
 
 //div that has container > Food name, description, price,picture
 
-export function createMenuOption(food,description,price,choice,picture){
+export function createMenuOption(food,description,price,picture){
     let containerDiv = createDivName("gridMenu",'');
     let divArray = [
         createDivName("menuOption",food),
         createDivName("menuDescription",description),
         createDivName("menuPrice",price),
-        //createImage(picture,"150"),
+        createImage(picture,"300"),
     ]
     
     let docFrag = document.createDocumentFragment();
             for(let i = 0; i<divArray.length;i++){
                 docFrag.appendChild(divArray[i]);
             }
-    document.querySelector(choice).appendChild(docFrag);
+    containerDiv.appendChild(docFrag);
+    return containerDiv
 
 }

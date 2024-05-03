@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: solid red 1px;
-}
+} */
 body, html{
     border: 0px;
     margin: 0px;
@@ -46,6 +46,7 @@ nav{
     flex-direction: column;
     margin-top: 16px;
     gap: 16px;
+    margin-right:16px ;
 
 }
 .sectionHeader{
@@ -103,4 +104,35 @@ h2 {
 .menuOptions{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+#Entrees>.gridMenu>img{
+    width: clamp(50px, 25% ,150px); 
+    border-radius: 50%;
+}
+#Drinks>.gridMenu>img{
+    width: clamp(50px, 25% ,150px); 
+    border-radius: 50%;
+}
+.gridMenu{
+   color: #fcfbfb;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #b78850;
+   border-radius: 32px;
+}
+.menuOption{
+    font-size: clamp(15px, 20px,30px);
+}
+.menuDescription{
+    font-size: clamp(15px, 15px,20px);
+    overflow: auto;
+    max-height: 100px;
+}
+.menuPrice{
+    font-size: clamp(15px, 15px,20px);
+    
 }
