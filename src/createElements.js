@@ -20,6 +20,7 @@ export function createImage(img,minwidth){
     let image = document.createElement("img");
     image.src =  img;
     image.width = minwidth;
+    image.setAttribute('loading', 'lazy');
     return image;
 }
 

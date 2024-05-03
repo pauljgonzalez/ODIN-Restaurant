@@ -23,4 +23,4 @@ let about = document.querySelector("#About")
         aboutButton()
     });
 
-    menuButton()
+    homeButton()
