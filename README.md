@@ -9,7 +9,7 @@ Lessons Learned:
 
 Webpack: How to set up and configure webpack. Will still need more expierence with it
 
-DocFrag
+DocFrag - How to add items to a doc frag first then add that to the DOM. So you do not overload the DOM by adding one by one
 
-Importing/Exporting
+Importing/Exporting - How to import and export files to break up the project
 
